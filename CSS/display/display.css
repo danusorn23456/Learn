@@ -1,0 +1,28 @@
+/*Position
+1.block
+2.none
+3.inline
+4.inline-block
+*/
+
+
+/* this is default ' don't work with position property like top margin left bottom*/
+.box#block{
+    width: 150px;
+    height: 150px;
+    border:2px black dotted;
+}
+
+/* inline cant access width-height-top-lef etc {the default for span} */
+.box#inline{
+    display: inline;
+    padding: 30px;
+    border:2px black dotted;
+}
+
+.box#inline-block{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border:2px black dotted;
+}
