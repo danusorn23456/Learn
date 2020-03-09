@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .grid{
+            display: grid;
+            overflow: hidden;
+            min-height: 85vw;
+            grid-template-areas: 
+            'a b b c d'
+            'e b b f g'
+            'h i j k g'
+            'l l m n n'
+            'o p q n n' 
+            ;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5,1fr);
+            background:linear-gradient(rgb(25, 55, 190),rgb(237, 103, 255));
+        }
+        
+        .grid__item{
+            border: 2px solid white;;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid__item::after{
+            display: block;
+            content:"";
+            width: 40px;
+            height: 40px;
+            background-color: rgb(255, 255, 255);
+            transform: rotate(45deg);
+        }
+
+        .grid__item:hover{
+            background-color: rgba(255, 255, 255, 0.24);
+            transform: scale(1.1);
+        }
+
+        .grid__item:nth-child(1){grid-area: a;}
+        .grid__item:nth-child(2){grid-area: b;}
+        .grid__item:nth-child(3){grid-area: c;}
+        .grid__item:nth-child(4){grid-area: d;}
+        .grid__item:nth-child(5){grid-area: e;}
+        .grid__item:nth-child(6){grid-area: f}
+        .grid__item:nth-child(7){grid-area: g;}
+        .grid__item:nth-child(8){grid-area: h;}
+        .grid__item:nth-child(9){grid-area: i;}
+        .grid__item:nth-child(10){grid-area: j;}
+        .grid__item:nth-child(12){grid-area: k;}
+        .grid__item:nth-child(12){grid-area: l;}
+        .grid__item:nth-child(13){grid-area: m;}
+        .grid__item:nth-child(14){grid-area: n;}
+        .grid__item:nth-child(15){grid-area: o;}
+        .grid__item:nth-child(16){grid-area: p;}
+        .grid__item:nth-child(17){grid-area: q;}
+    </style>
+</head>
+
+<body>
+   <div class="grid">
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+       <div class="grid__item"></div>
+   </div>
+</body>
+
+</html>
