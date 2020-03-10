@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            position: relative;
+            display: inline-block;
+            font-size: 2em;
+            color: rgb(139, 139, 139);
+            font-weight: 800;
+            overflow: hidden;
+        }
+
+        h1::before {
+            position: absolute;
+            content: "HELLO WORLD";
+            padding-top: 10px;
+            width: 0;
+            color: rgb(0, 0, 0);
+            overflow: hidden;
+            transition: width 275ms ease;
+            white-space: nowrap;
+        }
+
+        h1:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HELLO WORLD</h1>
+</body>
+
+</html>
