@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent_a{
+            position: relative;
+            width: 200px;
+            height: 200px; 
+            background-color: rgba(0, 68, 255, 0.404);
+            border:2px dotted black;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .parent_b{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            top: -100px;
+            left: 100px;
+            background-color: rgba(67, 255, 67, 0.404);
+            border:2px dotted black;
+        }
+        .item-a{
+            z-index: 1;
+            position: sticky;
+            width: 100px;
+            height: 100px;
+            border:2px dotted black;
+            background-color: rgba(179, 24, 24, 0.678);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent_a">
+        <div class="item-a"></div>
+    </div>
+    <div class="parent_b">
+    </div>
+</body>
+</html>
