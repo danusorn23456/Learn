@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="parallax.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            border-collapse: separate;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.3s;
+        }
+
+        body {
+            overflow: hidden;
+            background-color: black;
+        }
+
+        main {
+            position: relative;
+            background-size: cover;
+            width: 100vw;
+            height: 90vh;
+            background: url('./black.png');
+        }
+
+        nav {
+            padding: 20px;
+            top: 0;
+            width: 100%;
+            height: 10vh;
+            position: fixed;
+        }
+
+        .nav__list {
+            height: 100%;
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__list__item--paragraph {
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            font-size: 64px;
+            font-weight: thin;
+            display: inline-block;
+            letter-spacing: 20px;
+            line-height: 0;
+        }
+
+        .nav__list__item--hamburgur--menu {
+            cursor: pointer;
+            display: grid;
+            place-content: center;
+        }
+
+        .hamburgur--menu--span {
+            color: rgb(255, 255, 255);
+            transform: scaleX(3);
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 0;
+        }
+
+        .hamburgur--menu--span:nth-of-type(1) {
+            padding-bottom: 15px;
+        }
+
+        .hamburgur--menu--span:nth-of-type(3) {
+            padding-top: 15px;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            margin-top: 10vh;
+            height: 80vh;
+        }
+
+        .header--heading{
+            top:10%;
+            left: 10%;
+            cursor: default;
+            position: absolute;
+            color: white;
+            font-size: 120px;
+            z-index: 1;
+        }
+
+        .section__bottom {
+            height: 10vh;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .section__bottom__list {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section__bottom__list>.list__item>.list__item--paragraph {
+            color: white;
+            font-size: 20px;
+            font-weight: thin;
+        }
+
+        figure {
+            display: grid;
+            position: absolute;
+            top: 10%;
+            left: 10em;
+            height: 80%;
+            width: 20%;
+            background: linear-gradient(45deg, rgb(27, 27, 27) 0%, rgba(0, 0, 0, 1) 50%, rgb(39, 39, 39) 100%);
+        }
+        
+        .figure--box {
+            margin: auto;
+            height: 99%;
+            width: 99%;
+            background: url('./black.png');
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul class="nav__list">
+                <li class="list__item">
+                    <p class="nav__list__item--paragraph">...</p>
+                </li>
+                <li class="list__item">
+                    <div class="nav__list__item--hamburgur--menu">
+                        <span class="hamburgur--menu--span">-</span>
+                        <span class="hamburgur--menu--span">-</span>
+                        <span class="hamburgur--menu--span">-</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h1 class="header--heading"id="parallax__layer--1" >
+                PARALLAX.
+            </h1>
+            <figure id="parallax__layer--2">
+                <div class="figure--box" ></div>
+            </figure>
+        </header>
+        <section class="section__bottom">
+            <ul class="section__bottom__list">
+                <li class="list__item">
+                    <p class="list__item--paragraph paragraph--left">Only friend form Code Camp#5</p>
+                </li>
+                <li class="list__item">
+                    <p class="list__item--paragraph paragraph--right">Total Friend List = variable</p>
+                </li>
+            </ul>
+        </section>
+       
+    </main>
+</body>
+
+</html>
