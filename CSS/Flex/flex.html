@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            transition: all 1.3s ease-in-out;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(231, 231, 231);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container {
+            padding: 20px;
+            width: 25rem;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .neumo{
+            border-radius: 15px;
+            background: linear-gradient(95deg,rgb(231,231,231),rgb(223, 223, 223));
+            box-shadow: 8px 8px 24px rgb(206, 206, 206), -8px -8px 24px rgb(255, 255, 255);
+        }
+
+        .neumo-text{
+        }
+
+        .menu__item{
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        #item-a{
+        }
+
+        #item-h{
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container neumo">
+        <div class="menu__item neumo">
+            <a class="neumo-text">HOME</a>
+        </div>
+        <div class="menu__item neumo">
+            <a class="neumo-text">ABOUT</a>
+
+        </div>
+        <div class="menu__item neumo">
+            <a class="neumo-text">CONTACT</a>
+        </div>
+        <div class="menu__item neumo"></div>
+        <div class="menu__item neumo"></div>
+        <div class="menu__item neumo"></div>
+    </div>
+</body>
+
+</html>
