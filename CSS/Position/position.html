@@ -14,42 +14,30 @@
             position: static;
             background-color: rgb(29, 199, 221)
         }
- 
         #relative{
             position: relative;
-            bottom: 20px;
-            left: 150px;
             background-color: rgb(29, 221, 61)
         }
-
         #absolute{
             position: absolute;
-            left: 150px;
-            bottom: 20px;
+            top:50vw;
+            left:50vh;
             background-color: rgb(189, 39, 151);
         }
-
         #fixed{
             position: fixed;
-            right: 0;
+            right: 10px;
+            top: 60px;
             background-color: rgb(255, 147, 147);
         }
-
         #sticky{
             position: sticky;
-            position: -webkit-sticky;
-            bottom:0;
             background-color: cornsilk;
+            bottom: 0;
+            z-index: 1;
         }
-
-    </style>
     </style>
 </head>
 <body>
-    <div class="box" id="static">STATIC</div>
-    <div class="box" id="relative">RELATIVE</div>
-    <div class="box" id="absolute">ABSOLUTE</div>
-    <div class="box" id="fixed">FIXED</div>
-    <div class="box" id="sticky">STICKY</div>
 </body>
 </html>
