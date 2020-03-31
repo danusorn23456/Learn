@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            height: 100vh;
+            place-content: center;
+            background-color: rgb(226, 226, 226);
+        }
+        .box{
+            margin: 2rem;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(226, 226, 226);
+            border-radius: 15px;
+            box-shadow: 2px 2px 6px rgb(197, 197, 197),-4px -4px 6px rgb(255, 255, 255),0px 0px 10px white;
+        }
+        .active{
+            box-shadow: 2px 2px 6px inset rgb(197, 197, 197),-4px -4px 6px inset rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box active"></div>
+</body>
+</html>
